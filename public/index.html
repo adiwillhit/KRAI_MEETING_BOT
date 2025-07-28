@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetingBot - AI-Powered Meeting Assistant</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<style>
+    @keyframes riseFadeOut {
+      0% {
+        transform: scale(0.6) translateY(0);
+        opacity: 0.2;
+      }
+      100% {
+        transform: scale(3) translateY(-10px);
+        opacity: 0;
+      }
+    }
+
+    @keyframes smoothScaleFadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(1.05);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes shineMove {
+      0% {
+        left: -75%;
+      }
+      100% {
+        left: 125%;
+      }
+    }
+
+    @keyframes borderMove {
+      0%, 100% {
+        border-color: #ec4899;
+      }
+      25% {
+        border-color: #fbbf24;
+      }
+      50% {
+        border-color: #22c55e;
+      }
+      75% {
+        border-color: #3b82f6;
+      }
+    }
+
+    .animate-riseFadeOut {
+      animation: riseFadeOut 2s ease-in-out forwards;
+    }
+
+    .animate-smoothScaleFadeIn {
+      animation: smoothScaleFadeIn 0.8s ease forwards;
+    }
+
+    .animate-shineMove {
+      animation: shineMove 2.5s linear infinite;
+    }
+
+    .animate-borderMove {
+      animation: borderMove 3s linear infinite;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
